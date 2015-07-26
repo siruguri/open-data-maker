@@ -32,7 +32,12 @@ By default, data will be loaded from /sample-data
   * index name *city-data*
   * api endpoint name *cities*
 
-When you run the app (after ```rake import```), you can query the dataset via json API, like: /cities?name=Chicago
+When you run the app (after ```rake import```), you can query the dataset via json API, like:
+
+* http://localhost:3000/cities?name=Chicago
+* http://localhost:3000/cities?name=Chicago&state=IL
+* http://localhost:3000/cities?state=NY,MA
+* http://localhost:3000/cities?state=CA&fields=name,size
 
 To use your own data, you can set a different directory with
 
